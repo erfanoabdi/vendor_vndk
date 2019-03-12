@@ -225,6 +225,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-27-arm64/libappfuse.so:system/lib64/vndk-27/libappfuse.so \
 	vendor/vndk/vndk-27-arm64/libaudioclient.so:system/lib64/vndk-27/libaudioclient.so \
 	vendor/vndk/vndk-27-arm64/libaudiomanager.so:system/lib64/vndk-27/libaudiomanager.so \
+	vendor/vndk/vndk-27-arm64/libaudiospdif.so:system/lib64/vndk-27/libaudiospdif.so \
 	vendor/vndk/vndk-27-arm64/libcamera_client.so:system/lib64/vndk-27/libcamera_client.so \
 	vendor/vndk/vndk-27-arm64/libdebuggerd_client.so:system/lib64/vndk-27/libdebuggerd_client.so \
 	vendor/vndk/vndk-27-arm64/libdng_sdk.so:system/lib64/vndk-27/libdng_sdk.so \
