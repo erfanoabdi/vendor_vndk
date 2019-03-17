@@ -1,0 +1,46 @@
+#/bin/bash
+
+systempath=$1
+thispath=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
+
+# Copy phh stuffs
+mkdir -p $1/lib/vndk-27
+mkdir -p $1/lib64/vndk-27
+cp -fprn $thispath/vndk-27-arm32/* $1/lib/vndk-27/
+cp -fprn $thispath/vndk-27-arm64/* $1/lib64/vndk-27/
+mkdir -p $1/lib/vndk-sp-27
+mkdir -p $1/lib64/vndk-sp-27
+cp -fprn $thispath/vndk-sp-27-arm32/* $1/lib/vndk-sp-27/
+cp -fprn $thispath/vndk-sp-27-arm64/* $1/lib64/vndk-sp-27/
+
+mkdir -p $1/lib/vndk-28
+mkdir -p $1/lib64/vndk-28
+cp -fprn $thispath/vndk-28-arm32/* $1/lib/vndk-28/
+cp -fprn $thispath/vndk-28-arm64/* $1/lib64/vndk-28/
+mkdir -p $1/lib/vndk-sp-28
+mkdir -p $1/lib64/vndk-sp-28
+cp -fprn $thispath/vndk-sp-28-arm32/* $1/lib/vndk-sp-28/
+cp -fprn $thispath/vndk-sp-28-arm64/* $1/lib64/vndk-sp-28/
+
+# exclude_srcs libs
+cp -fpr $thispath/vndk-28-arm32-replace/libbinder.so $1/lib/vndk-28/
+cp -fpr $thispath/vndk-28-arm64-replace/libbinder.so $1/lib64/vndk-28/
+# Q lib
+cp -fpr $thispath/vndk-28-arm32-replace/libselinux.so $1/lib/vndk-28/
+cp -fpr $thispath/vndk-28-arm64-replace/libselinux.so $1/lib64/vndk-28/
+cp -fpr $thispath/vndk-28-arm32-replace/libstagefright_foundation.so $1/lib/vndk-28/
+cp -fpr $thispath/vndk-28-arm32-replace/libcamera_client.so $1/lib/vndk-28/
+# modded lib
+cp -fpr $thispath/vndk-28-arm32-replace/libprocinfo.so $1/lib/vndk-28/
+cp -fpr $thispath/vndk-28-arm32-replace/libziparchive.so $1/lib/vndk-28/
+
+# exclude_srcs libs
+cp -fpr $thispath/vndk-sp-28-arm32-replace/libcutils.so $1/lib/vndk-sp-28/
+cp -fpr $thispath/vndk-sp-28-arm64-replace/libcutils.so $1/lib64/vndk-sp-28/
+
+# Q patched libs
+cp -fpr $thispath/vndk-28-arm32-Qpatch/* $1/lib/vndk-28/
+cp -fpr $thispath/vndk-sp-28-arm32-Qpatch/* $1/lib/vndk-sp-28/
+
+cp -fpr $thispath/vndk-27-arm32-Qpatch/* $1/lib/vndk-27/
+cp -fpr $thispath/vndk-27-arm64-Qpatch/* $1/lib64/vndk-27/
