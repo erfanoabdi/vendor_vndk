@@ -4,10 +4,14 @@ systempath=$1
 thispath=`cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd`
 
 # Copy phh stuffs
-#cp -fpr $thispath/vndk-26-arm32 $1/lib/vndk-26
-#cp -fpr $thispath/vndk-26-arm64 $1/lib64/vndk-26
-#cp -fpr $thispath/vndk-sp-26-arm32 $1/lib/vndk-sp-26
-#cp -fpr $thispath/vndk-sp-26-arm64 $1/lib64/vndk-sp-26
+mkdir -p $1/lib/vndk-26
+mkdir -p $1/lib64/vndk-26
+cp -fpr $thispath/vndk-26-arm32 $1/lib/vndk-26
+cp -fpr $thispath/vndk-26-arm64 $1/lib64/vndk-26
+mkdir -p $1/lib/vndk-sp-26
+mkdir -p $1/lib64/vndk-sp-26
+cp -fpr $thispath/vndk-sp-26-arm32 $1/lib/vndk-sp-26
+cp -fpr $thispath/vndk-sp-26-arm64 $1/lib64/vndk-sp-26
 mkdir -p $1/lib/vndk-27
 mkdir -p $1/lib64/vndk-27
 cp -fprn $thispath/vndk-27-arm32/* $1/lib/vndk-27/
