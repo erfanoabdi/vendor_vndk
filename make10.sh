@@ -37,13 +37,8 @@ cp -fpr $thispath/vndk-sp-28-arm64-replace/libcutils.so $1/lib64/vndk-sp-28/
 
 # Q patched libs
 toolsdir="$thispath/tools"
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    patchelf="$toolsdir/linux/bin/patchelf"
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    patchelf="$toolsdir/mac/bin/patchelf"
-else
-    echo "Not Supported OS for patchelf"
-fi
+HOST="$(uname)"
+patchelf="$toolsdir/$HOST/bin/patchelf"
 
 $patchelf --add-needed libqinder.so $1/lib/vndk-28/libbinder.so
 $patchelf --add-needed libqi.so $1/lib/vndk-28/libui.so
