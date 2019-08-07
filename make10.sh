@@ -61,12 +61,14 @@ $patchelf --add-needed libqase.so $1/lib/vndk-sp-28/libbase.so
 $patchelf --add-needed libqwbinder.so $1/lib/vndk-sp-28/libhidltransport.so
 $patchelf --add-needed libqidltransport.so $1/lib/vndk-sp-28/libhidltransport.so
 $patchelf --add-needed libqutils.so $1/lib/vndk-sp-28/libcutils.so
+$patchelf --add-needed libqidlbase.so $1/lib/vndk-sp-28/libhidlbase.so
 
 cp -fpr $1/lib/libbase.so $1/lib/vndk-sp-28/libqase.so
 cp -fpr $1/lib/libhwbinder.so $1/lib/vndk-sp-28/libqwbinder.so
 cp -fpr $1/lib/libhidltransport.so $1/lib/vndk-sp-28/libqidltransport.so
 cp -fpr $1/lib/libbinderthreadstate.so $1/lib/vndk-sp-28/libbinderthreadstate.so
 cp -fpr $1/lib/libcutils.so $1/lib/vndk-sp-28/libqutils.so
+cp -fpr $1/lib/libhidlbase.so $1/lib/vndk-sp-28/libqidlbase.so
 
 $patchelf --add-needed libol.so $1/lib/vndk-27/libgraphicsenv.so
 
@@ -91,11 +93,13 @@ $patchelf --add-needed libqase.so $1/lib64/vndk-sp-28/libbase.so
 $patchelf --add-needed libqwbinder.so $1/lib64/vndk-sp-28/libhidltransport.so
 $patchelf --add-needed libqidltransport.so $1/lib64/vndk-sp-28/libhidltransport.so
 $patchelf --add-needed libqutils.so $1/lib64/vndk-sp-28/libcutils.so
+$patchelf --add-needed libqidlbase.so $1/lib64/vndk-sp-28/libhidlbase.so
 
 cp -fpr $1/lib64/libbase.so $1/lib64/vndk-sp-28/libqase.so
 cp -fpr $1/lib64/libhwbinder.so $1/lib64/vndk-sp-28/libqwbinder.so
 cp -fpr $1/lib64/libhidltransport.so $1/lib64/vndk-sp-28/libqidltransport.so
 cp -fpr $1/lib64/libbinderthreadstate.so $1/lib64/vndk-sp-28/libbinderthreadstate.so
 cp -fpr $1/lib64/libcutils.so $1/lib64/vndk-sp-28/libqutils.so
+cp -fpr $1/lib64/libhidlbase.so $1/lib64/vndk-sp-28/libqidlbase.so
 
 $patchelf --add-needed libol.so $1/lib64/vndk-27/libgraphicsenv.so
