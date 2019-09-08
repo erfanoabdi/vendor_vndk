@@ -2,7 +2,7 @@
 
 echo "PRODUCT_COPY_FILES += \\" > vndk32.mk
 echo "PRODUCT_COPY_FILES += \\" > vndk64.mk
-for api in 26 27;do
+for api in 26 27 28;do
 	[ -d vndk-${api}-arm32 ] && for lib in $(ls vndk-${api}-arm32);do
 		echo -e "\tvendor/vndk/vndk-${api}-arm32/$lib:system/lib/vndk-${api}/$lib \\" >> vndk32.mk
 	done
