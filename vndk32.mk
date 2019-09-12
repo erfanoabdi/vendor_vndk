@@ -116,8 +116,8 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm32/libminikin.so:system/lib/vndk-26/libminikin.so \
 	vendor/vndk/vndk-26-arm32/libnativebridge.so:system/lib/vndk-26/libnativebridge.so \
 	vendor/vndk/vndk-26-arm32/libnativehelper.so:system/lib/vndk-26/libnativehelper.so \
-	vendor/vndk/vndk-26-arm32/libnativeloader.so:system/lib/vndk-26/libnativeloader.so \
 	vendor/vndk/vndk-26-arm32/libnativewindow.so:system/lib/vndk-26/libnativewindow.so \
+	vendor/vndk/vndk-26-arm32/libnbaio.so:system/lib/vndk-26/libnbaio.so \
 	vendor/vndk/vndk-26-arm32/libnetutils.so:system/lib/vndk-26/libnetutils.so \
 	vendor/vndk/vndk-26-arm32/libnl.so:system/lib/vndk-26/libnl.so \
 	vendor/vndk/vndk-26-arm32/libopus.so:system/lib/vndk-26/libopus.so \
@@ -193,6 +193,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm32/libyuv.so:system/lib/vndk-26/libyuv.so \
 	vendor/vndk/vndk-26-arm32/libziparchive.so:system/lib/vndk-26/libziparchive.so \
 	vendor/vndk/vndk-sp-26-arm32/android.hardware.graphics.allocator@2.0.so:system/lib/vndk-sp-26/android.hardware.graphics.allocator@2.0.so \
+	vendor/vndk/vndk-sp-26-arm32/libz.so:system/lib/vndk-sp-26/libz.so \
 	vendor/vndk/vndk-sp-26-arm32/libhardware.so:system/lib/vndk-sp-26/libhardware.so \
 	vendor/vndk/vndk-sp-26-arm32/libhidltransport.so:system/lib/vndk-sp-26/libhidltransport.so \
 	vendor/vndk/vndk-sp-26-arm32/libblas.so:system/lib/vndk-sp-26/libblas.so \
@@ -275,5 +276,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-27-arm32/libstdc++.so:system/lib/vndk-27/libstdc++.so \
 	vendor/vndk/vndk-27-arm32/libvintf.so:system/lib/vndk-27/libvintf.so \
 	vendor/vndk/vndk-27-arm32/libvulkan.so:system/lib/vndk-27/libvulkan.so \
-	vendor/vndk/vndk-28-arm32/libeffectsconfig.so:system/lib/vndk-28/libeffectsconfig.so \
+	vendor/vndk/vndk-28-arm32/libbufferhubqueue.so:system/lib/vndk-28/libbufferhubqueue.so \
+	vendor/vndk/vndk-28-arm32/libstdc++.so:system/lib/vndk-28/libstdc++.so \
+	vendor/vndk/vndk-sp-28-arm32/libeffectsconfig.so:system/lib/vndk-sp-28/libeffectsconfig.so \
 

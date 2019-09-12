@@ -117,6 +117,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm64/libnativehelper.so:system/lib64/vndk-26/libnativehelper.so \
 	vendor/vndk/vndk-26-arm64/libnativeloader.so:system/lib64/vndk-26/libnativeloader.so \
 	vendor/vndk/vndk-26-arm64/libnativewindow.so:system/lib64/vndk-26/libnativewindow.so \
+	vendor/vndk/vndk-26-arm64/libnbaio.so:system/lib64/vndk-26/libnbaio.so \
 	vendor/vndk/vndk-26-arm64/libnetutils.so:system/lib64/vndk-26/libnetutils.so \
 	vendor/vndk/vndk-26-arm64/libnl.so:system/lib64/vndk-26/libnl.so \
 	vendor/vndk/vndk-26-arm64/libopus.so:system/lib64/vndk-26/libopus.so \
@@ -192,6 +193,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm64/libyuv.so:system/lib64/vndk-26/libyuv.so \
 	vendor/vndk/vndk-26-arm64/libziparchive.so:system/lib64/vndk-26/libziparchive.so \
 	vendor/vndk/vndk-sp-26-arm64/android.hardware.graphics.allocator@2.0.so:system/lib64/vndk-sp-26/android.hardware.graphics.allocator@2.0.so \
+	vendor/vndk/vndk-sp-26-arm64/libz.so:system/lib64/vndk-sp-26/libz.so \
 	vendor/vndk/vndk-sp-26-arm64/libhardware.so:system/lib64/vndk-sp-26/libhardware.so \
 	vendor/vndk/vndk-sp-26-arm64/libhidltransport.so:system/lib64/vndk-sp-26/libhidltransport.so \
 	vendor/vndk/vndk-sp-26-arm64/libblas.so:system/lib64/vndk-sp-26/libblas.so \
@@ -274,5 +276,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-27-arm64/libstdc++.so:system/lib64/vndk-27/libstdc++.so \
 	vendor/vndk/vndk-27-arm64/libvintf.so:system/lib64/vndk-27/libvintf.so \
 	vendor/vndk/vndk-27-arm64/libvulkan.so:system/lib64/vndk-27/libvulkan.so \
-	vendor/vndk/vndk-28-arm64/libeffectsconfig.so:system/lib64/vndk-28/libeffectsconfig.so \
+	vendor/vndk/vndk-28-arm64/libbufferhubqueue.so:system/lib64/vndk-28/libbufferhubqueue.so \
+	vendor/vndk/vndk-28-arm64/libstdc++.so:system/lib64/vndk-28/libstdc++.so \
+	vendor/vndk/vndk-sp-28-arm64/libeffectsconfig.so:system/lib64/vndk-sp-28/libeffectsconfig.so \
 
