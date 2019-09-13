@@ -79,6 +79,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm32/libdebuggerd_client.so:system/lib/vndk-26/libdebuggerd_client.so \
 	vendor/vndk/vndk-26-arm32/libdiskconfig.so:system/lib/vndk-26/libdiskconfig.so \
 	vendor/vndk/vndk-26-arm32/libdng_sdk.so:system/lib/vndk-26/libdng_sdk.so \
+	vendor/vndk/vndk-26-arm32/libdrmframework.so:system/lib/vndk-26/libdrmframework.so \
 	vendor/vndk/vndk-26-arm32/libdumpstateutil.so:system/lib/vndk-26/libdumpstateutil.so \
 	vendor/vndk/vndk-26-arm32/libEGL.so:system/lib/vndk-26/libEGL.so \
 	vendor/vndk/vndk-26-arm32/libETC1.so:system/lib/vndk-26/libETC1.so \
@@ -118,6 +119,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-26-arm32/libnativehelper.so:system/lib/vndk-26/libnativehelper.so \
 	vendor/vndk/vndk-26-arm32/libnativewindow.so:system/lib/vndk-26/libnativewindow.so \
 	vendor/vndk/vndk-26-arm32/libnbaio.so:system/lib/vndk-26/libnbaio.so \
+	vendor/vndk/vndk-26-arm32/libnetd_client.so:system/lib/vndk-26/libnetd_client.so \
 	vendor/vndk/vndk-26-arm32/libnetutils.so:system/lib/vndk-26/libnetutils.so \
 	vendor/vndk/vndk-26-arm32/libnl.so:system/lib/vndk-26/libnl.so \
 	vendor/vndk/vndk-26-arm32/libopus.so:system/lib/vndk-26/libopus.so \
