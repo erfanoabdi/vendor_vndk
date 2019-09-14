@@ -219,6 +219,7 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-sp-26-arm64/libbacktrace.so:system/lib64/vndk-sp-26/libbacktrace.so \
 	vendor/vndk/vndk-sp-26-arm64/libc++.so:system/lib64/vndk-sp-26/libc++.so \
 	vendor/vndk/vndk-sp-26-arm64/android.hidl.base@1.0.so:system/lib64/vndk-sp-26/android.hidl.base@1.0.so \
+	vendor/vndk/vndk-sp-26-arm64/liblog.so:system/lib64/vndk-sp-26/liblog.so \
 	vendor/vndk/vndk-sp-26-arm64/libcompiler_rt.so:system/lib64/vndk-sp-26/libcompiler_rt.so \
 	vendor/vndk/vndk-sp-26-arm64/libutils.so:system/lib64/vndk-sp-26/libutils.so \
 	vendor/vndk/vndk-sp-26-arm64/libhidlmemory.so:system/lib64/vndk-sp-26/libhidlmemory.so \
@@ -258,7 +259,6 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-27-arm64/libminikin.so:system/lib64/vndk-27/libminikin.so \
 	vendor/vndk/vndk-27-arm64/libnativebridge.so:system/lib64/vndk-27/libnativebridge.so \
 	vendor/vndk/vndk-27-arm64/libnativehelper.so:system/lib64/vndk-27/libnativehelper.so \
-	vendor/vndk/vndk-27-arm64/libnativeloader.so:system/lib64/vndk-27/libnativeloader.so \
 	vendor/vndk/vndk-27-arm64/libnetd_client.so:system/lib64/vndk-27/libnetd_client.so \
 	vendor/vndk/vndk-27-arm64/libpackagelistparser.so:system/lib64/vndk-27/libpackagelistparser.so \
 	vendor/vndk/vndk-27-arm64/libpdfium.so:system/lib64/vndk-27/libpdfium.so \
