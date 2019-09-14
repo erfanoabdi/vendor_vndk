@@ -239,7 +239,6 @@ PRODUCT_COPY_FILES += \
 	vendor/vndk/vndk-27-arm64/libETC1.so:system/lib64/vndk-27/libETC1.so \
 	vendor/vndk/vndk-27-arm64/libGLESv2.so:system/lib64/vndk-27/libGLESv2.so \
 	vendor/vndk/vndk-27-arm64/libGLESv3.so:system/lib64/vndk-27/libGLESv3.so \
-	vendor/vndk/vndk-27-arm64/libgraphicsenv.so:system/lib64/vndk-27/libgraphicsenv.so \
 	vendor/vndk/vndk-27-arm64/libharfbuzz_ng.so:system/lib64/vndk-27/libharfbuzz_ng.so \
 	vendor/vndk/vndk-27-arm64/libheif.so:system/lib64/vndk-27/libheif.so \
 	vendor/vndk/vndk-27-arm64/libhwui.so:system/lib64/vndk-27/libhwui.so \
